@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hushlamb</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "http://static.parastorage.com/services/web/2.1038.34/css/wysiwyg/preloader.css" %>
+  <%= stylesheet_link_tag "http://static.parastorage.com/services/web/2.1038.34/css/wysiwyg/viewer.min.css" %>
+  <%= stylesheet_link_tag "http://static.parastorage.com/services/web/2.1038.34/css/wysiwyg/user-site-fonts/latin.css" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="home">
+      <p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_OverlineMenuButtonNSkinddm3-label">Home</p>
+    </div>
+
+    <div class="top" >
+      <h2.font_2>NEXT EVENT</h2>
+    </div>
+
+    <div class="banner">
+      <%= image_tag "hl_motif_local_banner.jpg" %>
+    </div>
+
+    <div class="box" id="boxoffice">
+      <h3>Hushlamb Motif Local</h3>
+      <%= yield %>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
