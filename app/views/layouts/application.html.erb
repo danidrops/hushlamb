@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>hushlamb</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
   <%= stylesheet_link_tag "http://static.parastorage.com/services/web/2.1038.34/css/wysiwyg/preloader.css" %>
   <%= stylesheet_link_tag "http://static.parastorage.com/services/web/2.1038.34/css/wysiwyg/viewer.min.css" %>
   <%= stylesheet_link_tag "http://static.parastorage.com/services/web/2.1038.34/css/wysiwyg/user-site-fonts/latin.css" %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
   <%= csrf_meta_tags %>
   <script src="https://checkout.stripe.com/checkout.js"></script>
 </head>
@@ -15,7 +17,7 @@
   <div class="container">
 
     <div class="home">
-      <p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_OverlineMenuButtonNSkinddm3-label">Home</p>
+      <p skinpart="label" class="wysiwyg_viewer_skins_dropmenubutton_OverlineMenuButtonNSkinddm3-label"><a href="http://hushlamb.com">Home</a></p>
     </div>
 
     <div class="top" >
