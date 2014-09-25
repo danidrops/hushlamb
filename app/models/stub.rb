@@ -6,7 +6,7 @@ class Stub < ActiveRecord::Base
 
     s = Prawn::Document.new
     s.image backgroundpath
-    s.draw_text self.code, :at => [250,265], :size => 20
+    s.draw_text self.code, :at => [170,265], :size => 20
     s.render
   end
 
