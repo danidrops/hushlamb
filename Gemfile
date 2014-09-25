@@ -36,6 +36,9 @@ gem 'exception_notification'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'prawn'
 
+# serve assets on Heroku
+gem 'rails_serve_static_assets', group: [:production]
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
