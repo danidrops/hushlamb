@@ -1,12 +1,12 @@
 class TicketsMailer < ActionMailer::Base
-  default from: 'hushlamb46@gmail.com'
+  default from: 'info@hushlamb.com'
 
   def ticket_sender(ticket)
     @ticket = ticket
 
     incr = 1
     @ticket.number.times do
-      stub_code = @ticket.id.to_s + "-" + incr.to_s
+      stub_code = (@ticket.id + 3246).to_s + "-" + incr.to_s
       stub = Stub.create({code: stub_code, ticket_id: @ticket.id})
       attachments["HLTicketNo#{stub_code}.pdf"] = {
         mime_type: 'application/pdf',

@@ -86,6 +86,16 @@ a {
   font-size: 20px;
 }
 
+.box p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.box a {
+  color: rgb(232, 232, 232);
+  text-decoration: underline;
+}
+
 .actions {
   margin-top: 10px;
 }

@@ -16,12 +16,11 @@ Hushlamb::Application.configure do
   #mailer stuff
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+    address:              'smtp.mandrillapp.com',
     port:                 587,
-    domain:               'gmail.com',
-    user_name:            'trystmtl@gmail.com',
+    user_name:            'info@hushlamb.com',
     password:             'REDACTED',
-    authentication:       'plain',
+    authentication:       'login',
     enable_starttls_auto: true  }
 
   config.action_mailer.raise_delivery_errors = true
